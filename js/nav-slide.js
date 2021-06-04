@@ -62,3 +62,14 @@ $("#nav-contact").click(() => {
     scrollTime
   );
 });
+
+
+
+
+$(window).on("scroll", function() {
+  if($(window).scrollTop() > 50) {
+      $(".my-main-header").addClass("active");
+  } else {
+     $(".my-main-header").removeClass("active");
+  }
+});
